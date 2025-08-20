@@ -7,10 +7,8 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 const withNextra = nextra({
   latex: true,
-  search: {
-    codeblocks: false
-  },
   contentDirBasePath: '/docs',
+  defaultShowCopyCode: false
 })
 
 export default withNextra(
