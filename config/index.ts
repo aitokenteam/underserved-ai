@@ -5,13 +5,13 @@ export default {
    */
   metadata: {
     title: {
-      default: 'Mantine Next.js and Nextra template',
-      template: '%s | Mantine Next.js and Nextra template',
+      default: 'Underserved.ai',
+      template: '%s | Underserved.ai',
     },
-    description: 'I am using Mantine with Next.js and Nextra!',
-    metadataBase: new URL('https://next-app-nextra-template.vercel.app/'),
+    description: 'Underserved.ai',
+    metadataBase: new URL('https://Underserved.ai/'),
     keywords: [
-      'Mantine',
+      'Underserved.ai',
       'Nextra',
       'Next.js',
       'React',
@@ -21,14 +21,14 @@ export default {
       'Static Site Generator',
     ],
     generator: 'Next.js',
-    applicationName: 'Mantine',
+    applicationName: 'Underserved.ai',
     appleWebApp: {
-      title: 'Mantine',
+      title: 'Underserved.ai',
     },
     openGraph: {
       // https://github.com/vercel/next.js/discussions/50189#discussioncomment-10826632
       url: './',
-      siteName: 'Mantine',
+      siteName: 'Underserved.ai',
       locale: 'en_US',
       type: 'website',
     },
@@ -36,7 +36,7 @@ export default {
       'msapplication-TileColor': '#fff',
     },
     twitter: {
-      site: 'https://next-app-nextra-template.vercel.app/',
+      site: 'https://x.com/0xUnderserved/',
     },
     alternates: {
       // https://github.com/vercel/next.js/discussions/50189#discussioncomment-10826632

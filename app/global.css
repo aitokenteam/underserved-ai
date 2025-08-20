@@ -21,6 +21,18 @@
     font-size: var(--x-text-sm) !important;
     line-height: var(--tw-leading, var(--x-text-sm--line-height)) !important;
   }
+
+  /* Hide the Nextra search input - multiple selectors for better coverage */
+  [data-nextra-search],
+  .nextra-search,
+  .nx-search,
+  .nx-relative,
+  [data-testid="search"],
+  .search-input,
+  input[placeholder*="Search"],
+  input[placeholder*="search"] {
+    display: none !important;
+  }
 }
 
 @layer components, mantine, nextra, overwrite;
