@@ -35,7 +35,16 @@ export function Welcome() {
   return (
     <>
       <Center my={64} />
-      <Title maw="90vw" mx="auto" className={classes.title} ta="center">
+      <Title 
+        maw="95vw" 
+        mx="auto" 
+        className={classes.title} 
+        ta="center"
+        style={{ 
+          minHeight: 'auto',
+          lineHeight: 1.1
+        }}
+      >
         Coming soon!
         <TextAnimate
           animate="in"
@@ -132,8 +141,8 @@ export function Welcome() {
             "   - Global expansion across blockchain's deepest alpha pools.",
             "",
             "> TOKEN UTILITIES ENGAGED:",
-            "   - $UMINDSHARE (Base): Unlocks the full platform at 50K",
-            "   - $UNDERSERVED NFT: Access Creator Boost Program, turbo-charge influence ops.",
+            "   - $UMIND (Base): Unlocks the full platform at 50K",
+            "   - $UMIND NFT: Access Creator Boost Program, turbo-charge influence ops.",
             "",
             "> REDISTRIBUTING ALPHA...",
             "   - Mindshare Analytics.",

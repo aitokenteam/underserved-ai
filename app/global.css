@@ -11,6 +11,11 @@
 @layer overwrite {
   :root {
     --x-color-nextra-bg: var(--mantine-color-body);
+    
+    /* Restore Mantine blue color variables */
+    --mantine-color-blue-6: #228be6;
+    --mantine-color-blue-7: #1c7ed6;
+    --mantine-color-blue-8: #1971c2;
   }
 
   :where(.dark) {
@@ -32,6 +37,87 @@
   input[placeholder*="Search"],
   input[placeholder*="search"] {
     display: none !important;
+  }
+  
+  /* Restore blue styling for links and buttons */
+  a {
+    color: #228be6 !important; /* Mantine blue color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #1c7ed6 !important; /* Darker blue on hover */
+    text-decoration: none; /* No underline on hover */
+  }
+  
+  /* Restore blue button styling with more specific selectors */
+  .mantine-Button-root[data-variant="outline"],
+  .mantine-Button-outline,
+  button[data-variant="outline"],
+  [data-variant="outline"] {
+    border: 1px solid #228be6 !important;
+    color: #228be6 !important;
+    background-color: transparent !important;
+  }
+  
+  .mantine-Button-root[data-variant="outline"]:hover,
+  .mantine-Button-outline:hover,
+  button[data-variant="outline"]:hover,
+  [data-variant="outline"]:hover {
+    background-color: #495057 !important; /* Dark gray background on hover */
+    color: #228be6 !important; /* Keep blue text on hover */
+    border-color: #228be6 !important;
+  }
+  
+  /* Force blue border for outline buttons */
+  .mantine-Button-outline {
+    border: 1px solid #228be6 !important;
+    color: #228be6 !important;
+  }
+  
+  .mantine-Button-outline:hover {
+    background-color: #495057 !important; /* Dark gray background on hover */
+    color: #228be6 !important; /* Keep blue text on hover */
+  }
+  
+  /* Specific styling for the Welcome component button */
+  .mantine-Button-root[href*="linktr.ee"] {
+    border: 1px solid #228be6 !important;
+    color: #228be6 !important;
+    background-color: transparent !important;
+  }
+  
+  .mantine-Button-root[href*="linktr.ee"]:hover {
+    background-color: #495057 !important; /* Dark gray background on hover */
+    color: #228be6 !important; /* Keep blue text on hover */
+    border-color: #228be6 !important;
+  }
+  
+  /* Override any Mantine default button styles */
+  .mantine-Button-root[data-variant="outline"] {
+    --mantine-color-outline: #228be6 !important;
+    --mantine-color-outline-hover: #228be6 !important;
+  }
+  
+  /* Ensure button text color is preserved on hover */
+  .mantine-Button-root[data-variant="outline"]:hover span,
+  .mantine-Button-outline:hover span,
+  .mantine-Button-root[data-variant="outline"]:hover *,
+  .mantine-Button-outline:hover * {
+    color: #228be6 !important;
+  }
+  
+  /* Force dark gray background for all outline button hovers */
+  .mantine-Button-root[data-variant="outline"]:hover,
+  .mantine-Button-outline:hover,
+  button[data-variant="outline"]:hover {
+    background-color: #495057 !important;
+    color: #228be6 !important;
+  }
+  
+  /* Restore blue text for specific elements */
+  .blue-text {
+    color: #228be6 !important;
   }
 }
 
