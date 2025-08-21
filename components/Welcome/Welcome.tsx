@@ -126,7 +126,7 @@ export function Welcome() {
             "   • Deep scans measure project influence, sentiment fractals, cross-community spikes.",
             "",
             "> PHASE 1/3 /// Operation: Content Bootstrap",
-            "   - $UMINDSHARE token genesis.",
+            "   - $UMIND token genesis.",
             "   - NFT mint slingshot.",
             "   - Analytics engine goes live.",
             "   - First deployment: Virtuals Protocol, Spanish community.",
