@@ -21,6 +21,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en" dir="ltr" {...mantineHtmlProps}>
       <Head>
+        <meta name="virtual-protocol-site-verification" content="486374293586dacfb9191122e0ebfe4e" />
         <ColorSchemeScript
           nonce={head.mantine.nonce}
           defaultColorScheme={head.mantine.defaultColorScheme}
