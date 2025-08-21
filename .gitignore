@@ -133,4 +133,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-.DS_Store_template-backup/
+.DS_Store
+_template-backup/
